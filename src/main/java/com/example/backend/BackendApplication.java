@@ -31,8 +31,11 @@ public class BackendApplication {
 
 		@GetMapping()
 		public Service get() {
+			System.out.println("backend start.");
+
 			Service service = new Service();
 			service.setName("k8s");
+			System.out.println("backend end.");
 			return service;
 		}
 	}
